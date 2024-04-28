@@ -7,7 +7,9 @@ export default function () {
        
        <button className='bg-blue-500 rounded-lg shadow-lg p-1 m -2 h-7 m-2'> <Link to={"/form"}> Form</Link> </button>
        <button className='bg-blue-500 rounded-lg shadow-lg p-1 m -2 h-7 m-2'> <Link to={"/bg"}> Background changer</Link> </button>
-       <button className='bg-blue-500 rounded-lg shadow-lg p-1 m -2 h-7 m-2'> <Link to={"/pg"}> password genarator</Link> </button>
+       <button className='bg-blue-500 rounded-lg shadow-lg p-1 m -2 h-7 m-2'> <Link to={"/pg"}> password genarator</Link> </button> 
+       <button className='bg-blue-500 rounded-lg shadow-lg p-1 m -2 h-7 m-2'> <Link to={"/cd"}> cardr</Link> </button> 
+
     </div>
   )
 }
