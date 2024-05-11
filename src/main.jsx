@@ -11,6 +11,6 @@ import Test from './componant/Test.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router/>
-   <Test />
+   
   </React.StrictMode>,
 )

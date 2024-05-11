@@ -36,20 +36,21 @@ export default function Passwordgenrater() {
         , [password])
 
     return (
-        <div className="h-screen w-full flex justify-center py-10">
-            <div className='h-52 w-96 bg-cyan-50 flex-col  p-4 justify-center items-center '>
+        <><div className="h-auto w-auto flex justify-center py-10 ">
+            <div className='h-auto w-96 bg-cyan-50 flex-col  p-4 justify-center items-center '>
 
-                <input type="range" defaultValue={0} onChange={(e) => { setRange(e.target.value) }} />
-                <h3>number: </h3>
+           <center> <div className='flex-col justify-center '> <input type="range" defaultValue={0} onChange={(e) => { setRange(e.target.value) } } /> <h1>{range} </h1></div> </center>
+          
+                <h2>Number: </h2>
                 <input type="checkbox" defaultValue={false} onChange={(e) => SetNumberAllow((pre) => !pre)} />
-                <h3>char:</h3>
+                <h2>Char:</h2>
                 <input type="checkbox" defaultValue={false} onChange={(e) => SetcharAllow((pre) => !pre)} />
 
-                <h1>{range}</h1>
-                <input type="text" readOnly value={password} ref={inputref} className='flex shadow p-1 rounded-lg overflow-hidden mb-4 outline-none' />
+                
+                <input type="text" readOnly value={password} ref={inputref} className='flex shadow h-8 p-3 rounded-lg overflow-hidden mb-4 outline-none my-10 ' />
                 <button onClick={copy} className='bg-blue bg-slate-400 rounded-md p-2'>copy</button>
-            </div>
-            <button className='bg-blue-500 rounded-lg shadow-lg p-2 m -2'> <Link to={"/"}> Home</Link> </button>
-        </div>
+                <button className='bg-blue-500 rounded-lg shadow-lg p-2 mx-28'> <Link to={"/"}> Home</Link> </button>
+            </div>  </div></>
+      
     )
 }
